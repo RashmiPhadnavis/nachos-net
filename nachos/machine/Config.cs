@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Collections.Generic;
 using System.IO;
 
-namespace nachos
+namespace nachos.machine
 {
     public sealed class Config
     {

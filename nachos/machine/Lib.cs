@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace nachos
+namespace nachos.machine
 {
     public static class Lib
     {
