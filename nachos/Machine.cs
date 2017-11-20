@@ -145,6 +145,7 @@ Options:
             Trace.Assert(s_Args == null);
             s_Args = args;
             ProcessArgs();
+            Config.Load(s_ConfigFileName);
         }
     }
 }
