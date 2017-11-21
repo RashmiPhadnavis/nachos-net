@@ -34,11 +34,19 @@ namespace nachos.machine
                         if (!string.IsNullOrEmpty(line))
                         {
                             string[] tokens = line.Split('=');
-                            if (tokens.Length == 2 &&
-                                !string.IsNullOrEmpty(tokens[0]) &&
-                                !string.IsNullOrEmpty(tokens[1]))
+                            if (tokens.Length == 2)
                             {
-                                s_Config.Add(tokens[0], tokens[1]);
+                                string key = tokens[0].Trim();
+                                string value = tokens[1].Trim();
+                                if (!string.IsNullOrEmpty(key) &&
+                                    !string.IsNullOrEmpty(value))
+                                {
+                                    s_Config.Add(tokens[0], tokens[1]);
+                                }
+                                else
+                                {
+                                    LoadError(line);
+                                }
                             }
                             else
                             {
