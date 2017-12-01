@@ -29,12 +29,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="Microsoft.VisualBasic" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="machine\Machine.cs" />
     <Compile Include="machine\Lib.cs" />
     <Compile Include="machine\Config.cs" />
+    <Compile Include="machine\ArrayFile.cs" />
+    <Compile Include="machine\OpenFile.cs" />
+    <Compile Include="machine\OpenFileWithPosition.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
